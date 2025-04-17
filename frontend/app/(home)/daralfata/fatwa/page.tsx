@@ -1,4 +1,6 @@
+import QuestionAbsenceCard from "@/components/daralfata/questionAbsenceCard";
 import SectionBanner from "@/components/general/sectionBanner";
+import { LucidePrinter, Printer, PrinterCheck } from "lucide-react";
 
 export default function FatwaDetail() {
   return (
@@ -7,25 +9,25 @@ export default function FatwaDetail() {
 
       <div className="p-6">
         {/* Header */}
-        <div className="flex justify-between text-sm text-gray-500 mb-2">
+        <div className="flex justify-end gap-10 items-center text-2xl text-primary mb-2 p-6">
+          <button className="flex items-center gap-2">
+            <LucidePrinter />
+            <span>پرنٹ</span>
+          </button>
           <span>تاریخ: 2024-02-25</span>
-          <div className="flex items-center gap-1">
-            <div className="w-2 h-2 bg-green-500 rounded-full" />
-            <span>شائع شدہ</span>
-          </div>
         </div>
 
         {/* Question Title */}
-        <h1 className="text-lg text-gray-700 leading-relaxed border-b pb-2 mb-4">
+        <h1 className="text-3xl text-primary leading-relaxed border-b  place-self-end  mb-4 p-6 ">
           ایک شخص روزے کی حالت میں (واضح طور پر) اپنی بیوی سے شرمگاہ کے اندرونی
           حصے میں انگلی داخل کرے تو کیا روزہ ٹوٹ جائے گا؟
         </h1>
 
         {/* Question Box */}
         <div className="mb-6">
-          <button className="bg-green-500 text-white text-sm rounded px-4 py-1 mb-2">
+          <div className="w-fit place-self-end bg-primary text-white text-4xl px-8 py-3  rounded-2xl  my-8">
             سوال
-          </button>
+          </div>
           <p className="leading-loose text-gray-800 lg:text-3xl">
             ایک شخص جس کی قربانی کرنے کی گنجائش تقریبا تین ساڑھے تین لاکھ روپے
             تھی، اس نے ایک  بڑا جانور  اپنی استعداد سے بڑھ کر ساڑھے پانچ لاکھ
@@ -46,9 +48,9 @@ export default function FatwaDetail() {
 
         {/* Answer Box */}
         <div className="mb-6">
-          <button className="bg-teal-500 text-white text-sm rounded px-4 py-1 mb-2">
+          <div className="w-fit place-self-end bg-primary text-white text-4xl px-8 py-3  rounded-2xl  my-8">
             جواب
-          </button>
+          </div>
           <p className="leading-loose text-gray-800 text-3xl">
             واضح رہے کہ اگر کسی مال دار (غنی) صاحبِ نصاب شخص نے قربانی کی نیت سے
             جانور خریدا پھر وہ جانور بیمار ہوگیا تو دیکھا جائے گا کہ اگر بیماری
@@ -85,22 +87,43 @@ export default function FatwaDetail() {
         </div>
 
         {/* Fatwa ID and Footer */}
-        <div className="border-t border-gray-300 pt-3 text-sm text-gray-600 mb-6 flex justify-between">
+        <div className="border-t py-10 border-gray-300  text-2xl text-primary mb-6 flex justify-between">
           <span>واللہ اعلم بالصواب۔ دارالافتاء، دارالسلام</span>
           <span>فتویٰ نمبر: 144512100003</span>
         </div>
 
         {/* Related Questions */}
-        <div className="space-y-2 text-3xl">
-          <h3 className="font-semibold  text-gray-800 border-b pb-1">
-            متعلقہ سوالات:
-          </h3>
-          <ul className="list-disc pr-5 text-teal-600 space-y-1">
-            <li>رمضان میں شوہر کا بیوی سے بوس و کنار کرنا</li>
-            <li>روزے کی حالت میں بدنگاہی کا حکم</li>
-            <li>روزے میں بیوی کو چومنا جائز ہے؟</li>
+        <div className="space-y-2 ">
+          <div className="w-fit  place-self-end bg-primary text-white text-4xl px-8 py-3  rounded-2xl  my-8">
+            متعلقہ
+          </div>
+          <ul className="list-disc pr-5 text-2xl  space-y-10">
+            <div className="flex justify-between items-center ">
+              <div className="text-primary">مزید پڑھیے</div>
+              <div>
+                ایک مرتبہ جتنی رقم سے قربانی کا جانور خرید لیا اتنی رقم سے
+                قربانی کرنا لازم ہے ورنہ بقیہ رقم صدقہ کرنا ضروری ہے
+              </div>
+            </div>
+            <div className="flex justify-between items-center">
+              <div className="text-primary">مزید پڑھیے</div>
+              <div>
+                ایک مرتبہ جتنی رقم سے قربانی کا جانور خرید لیا اتنی رقم سے
+                قربانی کرنا لازم ہے ورنہ بقیہ رقم صدقہ کرنا ضروری ہے
+              </div>
+            </div>
+            <div className="flex justify-between items-center">
+              <div className="text-primary">مزید پڑھیے</div>
+              <div>
+                ایک مرتبہ جتنی رقم سے قربانی کا جانور خرید لیا اتنی رقم سے
+                قربانی کرنا لازم ہے ورنہ بقیہ رقم صدقہ کرنا ضروری ہے
+              </div>
+            </div>
           </ul>
         </div>
+      </div>
+      <div className="max-w-4xl mx-auto py-20 ">
+        <QuestionAbsenceCard />
       </div>
     </div>
   );

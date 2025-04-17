@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 
 export default function QuestionAbsenceCard() {
   return (
-    <div className="rounded-md  border-2 border-primary p-5 md:px-10 py-5 ">
+    <div className="rounded-md border-2 border-primary p-5 md:px-10 py-5 ">
       {/*  */}
       <div className="flex justify-end items-center gap-6 w-full h-full border-b">
         <div className="text-2xl">مطلوبہ سوال موجود نہیں؟</div>
